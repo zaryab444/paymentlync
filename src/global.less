@@ -1,0 +1,130 @@
+@import '~antd/es/style/themes/default.less';
+
+
+
+
+
+
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+
+.textDescription{
+  font-size: 12px;
+  color: #c5c5c5;
+}
+
+.membershipContent{
+
+  text-align: center;
+}
+
+.MuiFormControl-root {
+  width: 100%;
+  border: 0;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+}
+
+.ant-pro-sider-collapsed  img{
+ display:none;
+}
+
+
+.ant-pro-sider-collapsed:after{
+  content: 'pl.';
+  padding-left: 3px;
+  font-size: 23px;
+  margin-top: -6px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif !important;
+ }
+ 
+
+ .ant-pro-page-container-warp {
+   display:none;
+ }
+
+ .ant-pro-table > div > .ant-card-body {
+  padding: 0px !important;
+}
+
+a.intuitPlatformConnectButton {
+  margin-left: -25px;
+}
+
+.invoiceCreate > .ant-card-body {
+  padding: 0px !important; 
+}
+
+
+.invoiceCreate > .ant-divider-horizontal
+{
+margin: 0px !important;
+padding-bottom: 10px !important;
+}
+
+.clientHeading{
+  text-align: right;
+  font-weight: 400;
+  font-size: 30px;
+  right: 40px;
+  top: 63px;
+  position: absolute;
+}
